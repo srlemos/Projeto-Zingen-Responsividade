@@ -14,6 +14,13 @@
   padding-inline: var(--px-lg);
 }
 
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+  /* border: solid pink; */
+}
+
 .desktop-only {
   display: none;
 }
@@ -27,20 +34,22 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-1\.5 {
+  gap: 1.5rem;
 }
 
 .grid {
   display: grid;
 }
 
-.container {
-  --max-width: 375px;
-  width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  margin-inline: auto;
-  border: solid pink;
-}
 
 @media (width >= 80em) {
   .container {
