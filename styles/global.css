@@ -73,6 +73,10 @@ h3 {
   font-size: var(--fs-lg);
 }
 
+p {
+  color: var(--text-color-secondary);
+}
+
 a {
   text-decoration: none;
   color: inherit;
